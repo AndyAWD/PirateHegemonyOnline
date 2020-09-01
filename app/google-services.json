@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "808699061025",
+    "firebase_url": "https://piratehegemonyonline-8932e.firebaseio.com",
+    "project_id": "piratehegemonyonline-8932e",
+    "storage_bucket": "piratehegemonyonline-8932e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808699061025:android:29ed4fe87ebdf8481c5460",
+        "android_client_info": {
+          "package_name": "tw.com.andyawd.piratehegemonyonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808699061025-en4vrk2vg4ih4i3vr9n3njgn9da9c0t0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tw.com.andyawd.piratehegemonyonline",
+            "certificate_hash": "a0c55b4135ebceae38a38eec9b96bb40e37db8f1"
+          }
+        },
+        {
+          "client_id": "808699061025-lf2bci2802h2hoh12qi6lpi24b04pv0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAleI5z4P8RP7dVXcZJNQGVI98GhvgX5D4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808699061025-lf2bci2802h2hoh12qi6lpi24b04pv0k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
