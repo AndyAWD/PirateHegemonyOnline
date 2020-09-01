@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/sivDgaBackground"
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:layout_margin="24dp"
+        android:src="@color/hexColor034_SteelBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="2:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeableImageView_Size24dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/sivDgaLevelBackground"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="16dp"
+        android:src="@color/hexColor092_Gold"
+        app:layout_constraintBottom_toBottomOf="@+id/sivDgaBackground"
+        app:layout_constraintEnd_toEndOf="@+id/sivDgaBackground"
+        app:layout_constraintHorizontal_bias=".0"
+        app:layout_constraintStart_toStartOf="@+id/sivDgaBackground"
+        app:layout_constraintTop_toTopOf="@+id/sivDgaBackground"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/ShapeableImageView_Size24dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvDgaLevel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/s"
+        android:textColor="@color/hexColor105_Firebrick"
+        android:textStyle="italic|bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/sivDgaLevelBackground"
+        app:layout_constraintEnd_toEndOf="@+id/sivDgaLevelBackground"
+        app:layout_constraintStart_toStartOf="@+id/sivDgaLevelBackground"
+        app:layout_constraintTop_toTopOf="@+id/sivDgaLevelBackground" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/sivDgaName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:src="@color/hexColor092_Gold"
+        app:layout_constraintBottom_toBottomOf="@+id/mtvDgaLevel"
+        app:layout_constraintEnd_toEndOf="@+id/sivDgaBackground"
+        app:layout_constraintStart_toEndOf="@+id/mtvDgaLevel"
+        app:layout_constraintTop_toTopOf="@+id/mtvDgaLevel"
+        app:shapeAppearanceOverlay="@style/ShapeableImageView_TopRight16dp_BottomRight16dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvDgaName"
+        style="@style/AppTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/hexColor092_Gold"
+        android:gravity="start|center_vertical"
+        android:padding="16dp"
+        android:text="@string/line_infantry"
+        android:textStyle="italic|bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/sivDgaName"
+        app:layout_constraintEnd_toEndOf="@+id/sivDgaName"
+        app:layout_constraintStart_toStartOf="@+id/sivDgaName"
+        app:layout_constraintTop_toTopOf="@+id/sivDgaName" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/sivDgaPictureBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:src="@color/hexColor016_Bisque"
+        app:layout_constraintBottom_toBottomOf="@+id/sivDgaBackground"
+        app:layout_constraintEnd_toEndOf="@+id/sivDgaBackground"
+        app:layout_constraintStart_toStartOf="@+id/sivDgaBackground"
+        app:layout_constraintTop_toBottomOf="@+id/mtvDgaLevel"
+        app:shapeAppearanceOverlay="@style/ShapeableImageView_Size24dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/aivDgaPicture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/sivDgaPictureBackground"
+        app:layout_constraintEnd_toEndOf="@+id/sivDgaPictureBackground"
+        app:layout_constraintStart_toStartOf="@+id/sivDgaPictureBackground"
+        app:layout_constraintTop_toTopOf="@+id/sivDgaPictureBackground"
+        tools:src="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>

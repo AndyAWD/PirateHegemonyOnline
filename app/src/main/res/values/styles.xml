@@ -13,4 +13,15 @@
         <item name="cornerSizeBottomLeft">80dp</item>
     </style>
 
+    <style name="ShapeableImageView_Size24dp" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="ShapeableImageView_TopRight16dp_BottomRight16dp" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeBottomRight">16dp</item>
+    </style>
+
 </resources>
