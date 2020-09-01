@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     companion object {
-        const val IGOTALLDAY_YOUTUBE = "https://www.youtube.com/channel/UCzjNxGvrqfxL9KGkObbzrmg"
+        const val TAIWAN_TRILOGY = "https://taiwantrilogy.com/"
         const val IGOTALLDAY_MOVIE_LINK = "https://www.youtube.com/watch?v=LUaYe_7cmxQ"
     }
 
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         mbTaiwanTrilogy.setOnClickListener {
             val intent = Intent()
             intent.action = Intent.ACTION_VIEW
-            intent.data = Uri.parse(IGOTALLDAY_YOUTUBE)
+            intent.data = Uri.parse(TAIWAN_TRILOGY)
             startActivity(intent)
         }
 
