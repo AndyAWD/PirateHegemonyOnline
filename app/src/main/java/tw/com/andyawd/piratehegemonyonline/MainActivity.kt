@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         const val IGOTALLDAY_YOUTUBE = "https://www.youtube.com/channel/UCzjNxGvrqfxL9KGkObbzrmg"
+        const val IGOTALLDAY_MOVIE_LINK = "https://www.youtube.com/watch?v=LUaYe_7cmxQ"
     }
 
 
@@ -26,6 +27,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent()
             intent.action = Intent.ACTION_VIEW
             intent.data = Uri.parse(IGOTALLDAY_YOUTUBE)
+            startActivity(intent)
+        }
+
+        mbAmMovieLink.setOnClickListener {
+            val intent = Intent()
+            intent.action = Intent.ACTION_VIEW
+            intent.data = Uri.parse(IGOTALLDAY_MOVIE_LINK)
             startActivity(intent)
         }
 
