@@ -6,11 +6,14 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.FragmentManager
+import com.bumptech.glide.Glide
+import com.google.android.material.imageview.ShapeableImageView
 
 class GetArmsDialogFragment : DialogFragment() {
 
     private var activity: Activity? = null
     private var mView: View? = null
+    private lateinit var sivDgaPictureBackground: ShapeableImageView
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -47,7 +50,8 @@ class GetArmsDialogFragment : DialogFragment() {
     }
 
     private fun initComponent(view: View) {
-
+        sivDgaPictureBackground = view.findViewById(R.id.sivDgaPictureBackground)
+        Glide.with(view).load(R.raw.janissary01).into(sivDgaPictureBackground)
     }
 
     private fun setBackgroundTransparent() {
