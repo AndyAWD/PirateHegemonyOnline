@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initClickListener() {
 
-        mbAmIgotalldayYoutube.setOnClickListener {
+        mbTaiwanTrilogy.setOnClickListener {
             val intent = Intent()
             intent.action = Intent.ACTION_VIEW
             intent.data = Uri.parse(IGOTALLDAY_YOUTUBE)

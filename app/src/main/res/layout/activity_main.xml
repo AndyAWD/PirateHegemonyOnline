@@ -57,22 +57,22 @@
         android:textAllCaps="false"
         app:autoSizeTextType="uniform"
         app:iconTint="@null"
-        app:layout_constraintBottom_toTopOf="@+id/mbAmIgotalldayYoutube"
+        app:layout_constraintBottom_toTopOf="@+id/mbTaiwanTrilogy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sivAmTitle" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/mbAmIgotalldayYoutube"
+        android:id="@+id/mbTaiwanTrilogy"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="@dimen/magic_8dp"
         android:layout_marginEnd="@dimen/magic_8dp"
         android:lines="1"
-        android:text="@string/igotallday_youtube"
+        android:text="@string/taiwan_trilogy_link"
         android:textAllCaps="false"
         app:autoSizeTextType="uniform"
-        app:icon="@drawable/igotallday"
+        app:icon="@drawable/taiwantrilogy"
         app:iconTint="@null"
         app:layout_constraintBottom_toTopOf="@+id/mbAmMovieLink"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +94,7 @@
         app:layout_constraintBottom_toTopOf="@+id/mbAmExit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mbAmIgotalldayYoutube" />
+        app:layout_constraintTop_toBottomOf="@+id/mbTaiwanTrilogy" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/mbAmExit"
