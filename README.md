@@ -1,6 +1,9 @@
 # 海賊爭霸Online
+***
+[![Build Status](https://travis-ci.org/AndyAWD/PirateHegemonyOnline.svg?branch=master)](https://travis-ci.org/AndyAWD/PirateHegemonyOnline)
+***
 
-反正我也很閒，就來做一個海賊爭霸Online讓人下載，話說有誰要做蟑滅絕
+反正我也很閒，就來做一個海賊爭霸Online讓人下載，話說有誰要做蟑欲絕
 
 [【臺灣400年系列電影】《臺灣三部曲》第一階段電影集資計畫](https://taiwantrilogy.com/)
 
