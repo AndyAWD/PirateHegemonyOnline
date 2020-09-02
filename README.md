@@ -1,5 +1,4 @@
 # 海賊爭霸Online
-***
 [![Build Status](https://travis-ci.org/AndyAWD/PirateHegemonyOnline.svg?branch=master)](https://travis-ci.org/AndyAWD/PirateHegemonyOnline)
 ***
 
