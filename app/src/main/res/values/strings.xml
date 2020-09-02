@@ -5,6 +5,7 @@
     <string name="get_line_infantry">領取你的 S級火槍兵</string>
     <string name="exit">離開海賊爭霸</string>
     <string name="line_infantry_already_get_count">已經有 %1$s 位玩家領取 S級火槍兵</string>
+    <string name="your_line_infantry_count">NO. %1$s</string>
     <string name="line_infantry">火槍兵</string>
     <string name="s">S</string>
 </resources>

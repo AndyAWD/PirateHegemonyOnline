@@ -8,12 +8,14 @@ import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.FragmentManager
 import com.bumptech.glide.Glide
 import com.google.android.material.imageview.ShapeableImageView
+import com.google.android.material.textview.MaterialTextView
 
 class GetArmsDialogFragment : DialogFragment() {
 
     private var activity: Activity? = null
     private var mView: View? = null
     private lateinit var sivDgaPictureBackground: ShapeableImageView
+    private lateinit var mtvDgaYourLineInfantryCount: MaterialTextView
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -45,12 +47,30 @@ class GetArmsDialogFragment : DialogFragment() {
         mView?.let { initComponent(it) }
 
         setBackgroundTransparent()
+        setCountText()
+
+
 
         return mView
     }
 
+    private fun setCountText() {
+        val bundle = arguments ?: return
+        val count = bundle.getLong(BaseConstants.COUNT)
+
+        if (count == 0L) {
+            return
+        }
+
+        mtvDgaYourLineInfantryCount.text = resources.getString(
+            R.string.your_line_infantry_count,
+            count.toString()
+        )
+    }
+
     private fun initComponent(view: View) {
         sivDgaPictureBackground = view.findViewById(R.id.sivDgaPictureBackground)
+        mtvDgaYourLineInfantryCount = view.findViewById(R.id.mtvDgaYourLineInfantryCount)
         Glide.with(view).load(R.raw.janissary01).into(sivDgaPictureBackground)
     }
 

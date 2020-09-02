@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,7 +9,7 @@
         android:id="@+id/sivDgaBackground"
         android:layout_width="320dp"
         android:layout_height="0dp"
-        android:layout_margin="24dp"
+        android:layout_margin="16dp"
         android:src="@color/hexColor034_SteelBlue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="2:3"
@@ -66,15 +67,31 @@
         android:layout_height="0dp"
         android:layout_marginEnd="16dp"
         android:background="@color/hexColor092_Gold"
-        android:gravity="start|center_vertical"
-        android:padding="16dp"
+        android:gravity="center"
         android:text="@string/line_infantry"
         android:textStyle="italic|bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/mtvDgaYourLineInfantryCount"
+        app:layout_constraintEnd_toEndOf="@+id/sivDgaName"
+        app:layout_constraintStart_toStartOf="@+id/sivDgaName"
+        app:layout_constraintTop_toTopOf="@+id/sivDgaName"
+        app:layout_constraintVertical_weight="3" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvDgaYourLineInfantryCount"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/hexColor092_Gold"
+        android:gravity="center"
+        android:textColor="@color/hexColor105_Firebrick"
         app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toBottomOf="@+id/sivDgaName"
         app:layout_constraintEnd_toEndOf="@+id/sivDgaName"
         app:layout_constraintStart_toStartOf="@+id/sivDgaName"
-        app:layout_constraintTop_toTopOf="@+id/sivDgaName" />
+        app:layout_constraintTop_toBottomOf="@+id/mtvDgaName"
+        app:layout_constraintVertical_weight="1"
+        tools:text="NO. 65535" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/sivDgaPictureBackground"
@@ -83,8 +100,10 @@
         android:layout_margin="16dp"
         android:src="@color/hexColor016_Bisque"
         app:layout_constraintBottom_toBottomOf="@+id/sivDgaBackground"
+        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="@+id/sivDgaBackground"
         app:layout_constraintStart_toStartOf="@+id/sivDgaBackground"
         app:layout_constraintTop_toBottomOf="@+id/mtvDgaLevel"
+        app:layout_constraintVertical_bias="0.0"
         app:shapeAppearanceOverlay="@style/ShapeableImageView_Size24dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
