@@ -67,7 +67,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/magic_8dp"
-        android:text="@string/line_infantry_already_get_count"
         android:textColor="@color/hexColor092_Gold"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
