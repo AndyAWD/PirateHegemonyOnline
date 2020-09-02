@@ -37,7 +37,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="@string/s"
+        android:text="@string/capital_letters_s"
         android:textColor="@color/hexColor105_Firebrick"
         android:textStyle="italic|bold"
         app:autoSizeTextType="uniform"

@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
 
         arms = ArmsBean().apply {
             this.name = resources.getString(R.string.line_infantry)
-            this.level = resources.getString(R.string.s)
+            this.level = resources.getString(R.string.capital_letters_s)
             this.count = yourLineInfantryCount
         }
 
