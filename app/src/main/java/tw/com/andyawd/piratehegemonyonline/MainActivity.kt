@@ -45,8 +45,6 @@ class MainActivity : AppCompatActivity() {
 
         mbAmGetLineInfantry.setOnClickListener {
 
-            writeArmsCount()
-
             val bundle = Bundle()
             bundle.putLong(BaseConstants.COUNT, sharedPreferences.getLong(BaseConstants.COUNT, 0))
 
@@ -75,33 +73,6 @@ class MainActivity : AppCompatActivity() {
         mbAmExit.setOnClickListener {
             android.os.Process.killProcess(android.os.Process.myPid())
         }
-    }
-
-    private fun writeArmsCount() {
-
-        //物件為初始值0，表示資料還沒寫入，不執行
-        if (arms.count == 0L) {
-            return
-        }
-
-        var yourLineInfantryCount = sharedPreferences.getLong(BaseConstants.COUNT, 0)
-
-        //sharedPreferences不為0，表示已經有資料，不執行
-        if (yourLineInfantryCount != 0L) {
-            return
-        }
-
-        yourLineInfantryCount = arms.count + 1
-
-        sharedPreferences.edit().putLong(BaseConstants.COUNT, yourLineInfantryCount).apply()
-
-        arms = ArmsBean().apply {
-            this.name = resources.getString(R.string.line_infantry)
-            this.level = resources.getString(R.string.capital_letters_s)
-            this.count = yourLineInfantryCount
-        }
-
-        database.setValue(arms)
     }
 
     private fun setGetLineInfantryCountText(count: Long) {
